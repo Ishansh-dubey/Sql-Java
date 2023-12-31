@@ -1,0 +1,43 @@
+package jdbcMysqlDemo;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class TeacherForeignKeyPOC {
+	
+public static void main(String[] args) {
+		
+		String url="jdbc:mysql://localhost:3306/food";
+		String username="root";
+		String password="";
+		
+		try{
+			Class.forName("com.mysql.cj.jdbc.Driver");//Register driver class
+			
+			Connection connection = DriverManager.getConnection(url,username,password); //create connection
+			
+			Statement stmt = connection.createStatement(); //CREATE Statement
+
+		//	String sql = "CREATE TABLE TEACHERSESES" + "(ID INT ," + "Name VARCHAR(255))";
+			
+		//	String sql = "alter table TEACHERSESES modify column ID VARCHAR(255)";              //Alter to modify datatype in pre existing table
+			
+	//		String sql = "alter table TEACHERSESES add primary key (ID)";                         //Alter to put primary KEY in pre existing table
+			
+	//    String sql = "insert into TEACHERSESES values ('T1', 'Aarush')";             // 1st input in table
+
+	//     String sql = "insert into TEACHERSESES values ('T2', 'Shyam')";                     //2nd input in table
+			
+            stmt.executeUpdate(sql);                                    //To Execute Update
+			
+			connection.close();                                    //To close connection
+		}
+		
+		catch( Exception e) {
+			e.printStackTrace();
+	}
+
+ }
+
+}
