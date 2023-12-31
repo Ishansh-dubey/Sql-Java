@@ -37,9 +37,9 @@ public class StudentForeignKeyPOC {
 			
 		//	String sql = "insert into STUDENTSESES values (3, 'Ramesh', 4, 'T3')";                      //3rd input in table
 		
-			stmt.executeUpdate(sql); //To Execute Update
+			stmt.executeUpdate(sql);                                                           //To Execute Update
 			
-			connection.close(); //To close connection
+			connection.close();                                  //To close connection
 		}
 		
 		catch( Exception e) {
