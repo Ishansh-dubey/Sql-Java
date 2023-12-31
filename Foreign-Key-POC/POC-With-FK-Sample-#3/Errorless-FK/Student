@@ -25,7 +25,7 @@ public class StudentForeignKeyPOC {
 			
   	//	 String sql = "alter table STUDENTSESES	add foreign key (ID) References TEACHERSESES (ID)";               //Alter to put Foreign key in pre existing table
 		
-		//	String sql = "insert into STUDENTSESES values (1, 'Ishansh', 4, 'T1')"; //1st input in table
+		//	String sql = "insert into STUDENTSESES values (1, 'Ishansh', 4, 'T1')";                             //1st input in table
 		
 		
 			stmt.executeUpdate(sql); //To Execute Update
